@@ -23,7 +23,7 @@ async function processCSV(filePath) {
         name: record.name,
         description: record.description
       });
-      console.log('updatePhone UUID', result);
+      console.log(`updatePhone performed on ${record.name}. Resulting UUID:`, result);
     } catch (error) {
       console.error(`Error processing phone ${record.name}:`, error);
     }
