@@ -17,7 +17,7 @@ SEP0038DFB50659,Conference Room A
 
 ### Build Locally
 ```bash
-docker build -t cucm-phone-update .
+docker build -t cucm-phone-updater .
 ```
 
 ### Run Container
@@ -27,19 +27,19 @@ docker run -v /data/phones.csv:/app/data/phones.csv \
   -e CUCM_USER=your-username \
   -e CUCM_PASS=your-password \
   -e CUCM_VERSION=15.0 \
-  cucm-phone-update
+  cucm-phone-updater
 ```
 
 ### Using GitHub Container Registry
 ```bash
-docker pull ghcr.io/sieteunoseis/cucm-phone-update:latest
+docker pull ghcr.io/sieteunoseis/cucm-phone-updater:latest
 
 docker run -v /data/phones.csv:/app/data/phones.csv \
   -e CUCM_HOST=your-cucm-server \
   -e CUCM_USER=your-username \
   -e CUCM_PASS=your-password \
   -e CUCM_VERSION=15.0 \
-  ghcr.io/sieteunoseis/cucm-phone-update:latest
+  ghcr.io/sieteunoseis/cucm-phone-updater:latest
 ```
 
 ## Environment Variables
