@@ -25,5 +25,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/cucm-phone-update:latest
-            ghcr.io/${{ github.repository }}/cucm-phone-update:${{ github.sha }}
+            ghcr.io/${{ github.repository }}/cucm-phone-updater:latest
+            ghcr.io/${{ github.repository }}/cucm-phone-updater:${{ github.sha }}

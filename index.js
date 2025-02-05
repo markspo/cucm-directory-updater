@@ -1,4 +1,3 @@
-// process-phones.js
 const fs = require('fs');
 const csv = require('csv-parse');
 const { AXLService } = require('cisco-axl');
