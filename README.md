@@ -22,7 +22,7 @@ docker build -t cucm-phone-updater .
 
 ### Run Container
 ```bash
-docker run -v /data/phones.csv:/app/data/phones.csv \
+docker run -v ./data/phones.csv:/app/data/phones.csv \
   -e CUCM_HOST=your-cucm-server \
   -e CUCM_USER=your-username \
   -e CUCM_PASS=your-password \
@@ -34,7 +34,7 @@ docker run -v /data/phones.csv:/app/data/phones.csv \
 ```bash
 docker pull ghcr.io/sieteunoseis/cucm-phone-updater:latest
 
-docker run -v /data/phones.csv:/app/data/phones.csv \
+docker run -v ./data/phones.csv:/app/data/phones.csv \
   -e CUCM_HOST=your-cucm-server \
   -e CUCM_USER=your-username \
   -e CUCM_PASS=your-password \

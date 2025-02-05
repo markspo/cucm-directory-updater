@@ -1,13 +1,13 @@
 const fs = require('fs');
 const csv = require('csv-parse');
-const { AXLService } = require('cisco-axl');
+const axlService = require("cisco-axl");
 
 const CUCM_HOST = process.env.CUCM_HOST;
 const CUCM_USER = process.env.CUCM_USER;
 const CUCM_PASS = process.env.CUCM_PASS;
 const CUCM_VERSION = process.env.CUCM_VERSION || '15.0';
 
-const service = new AXLService(CUCM_HOST, CUCM_USER, CUCM_PASS, CUCM_VERSION);
+const service = new axlService(CUCM_HOST, CUCM_USER, CUCM_PASS, CUCM_VERSION);
 
 async function processCSV(filePath) {
   const parser = fs.createReadStream(filePath).pipe(
