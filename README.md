@@ -5,7 +5,7 @@ This is a fork and modification to sieteunoseis/cucm-phone-updater
 
 ## Prerequisites
 - Docker
-- CSV file with `pattern`, `description`, and 'alertingname' columns
+- CSV file with `pattern`, `description`, and `alertingname` columns
 
 ## CSV Format
 ```csv
