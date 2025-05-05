@@ -39,18 +39,21 @@ async function processCSV(filePath) {
 
         for await (const record of parser) {
             try {
-                if (!record.name || !record.description) {
+                if (!record.pattern || !record.description || !record.alertingname) {
                     console.error('Missing required fields in CSV row:', record);
                     continue;
                 }
 
-                const result = await service.executeOperation('updatePhone', {
-                    name: record.name,
-                    description: record.description
-                });
-                console.log(`updatePhone performed on ${record.name}. Resulting UUID:`, result);
+                const result = await service.executeOperation('updateLine', {
+                    pattern: record.pattern,
+                    routePartitionName: record.routepartitionname,
+                    description: record.description,
+                    alertingName: record.alertingname,
+                    asciiAlertingName: record.alertingname
+                });                    
+                console.log(`updateLine performed on ${record.pattern}. Resulting UUID:`, result);
             } catch (error) {
-                console.error(`Error processing phone ${record.name}:`, error);
+                console.error(`Error processing pattern ${record.pattern}:`, error);
             }
         }
     } catch (error) {
