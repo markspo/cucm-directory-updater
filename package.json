@@ -1,9 +1,9 @@
 {
-  "name": "cucm-phone-update",
-  "version": "1.0.1",
+  "name": "cucm-directory-updater",
+  "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "sieteunoseis",
+  "author": "markspo",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
