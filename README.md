@@ -5,13 +5,13 @@ This is a fork and modification to sieteunoseis/cucm-phone-updater
 
 ## Prerequisites
 - Docker
-- CSV file with `pattern`, `description`, and `alertingname` columns
+- CSV file with `routepartitionname`, `pattern`, `description`, and `alertingname` columns
 
 ## CSV Format
 ```csv
-pattern,description,alertingname
-1000,Reception Phone,B1-Reception Phone
-1001,Conference Room A,B2-Conference Room A
+routepartitionname,pattern,description,alertingname
+PT_ROUTE,1000,Reception Phone,B1-Reception Phone
+PT_ROUTE,1001,Conference Room A,B2-Conference Room A
 ```
 
 ## Usage
