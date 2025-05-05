@@ -1,2 +1,3 @@
-name,description
-SEP0038DFB50658,"Description for SEP0038DFB50658"
+routepartitionname,pattern,description,alertingname
+PT_ROUTE,1000,Reception Phone,B1-Reception Phone
+PT_ROUTE,1001,Conference Room A,B2-Conference Room A
