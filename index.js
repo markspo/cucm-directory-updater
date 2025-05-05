@@ -39,7 +39,7 @@ async function processCSV(filePath) {
 
         for await (const record of parser) {
             try {
-                if (!record.pattern || !record.description || !record.alertingname) {
+                if (!record.pattern || !record.description || !record.alertingname || !record.routepartitionname) {
                     console.error('Missing required fields in CSV row:', record);
                     continue;
                 }
