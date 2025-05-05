@@ -16,8 +16,14 @@ PT_ROUTE,1001,Conference Room A,B2-Conference Room A
 
 ## Usage
 
+### Clone repo
+```bash
+git clone https://github.com/markspo/cucm-directory-updater
+```
+
 ### Build Locally
 ```bash
+cd cucm-directory-updater
 docker build -t cucm-directory-updater .
 ```
 
